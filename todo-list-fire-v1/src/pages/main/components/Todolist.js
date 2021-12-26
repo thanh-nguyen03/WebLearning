@@ -2,14 +2,14 @@ import React from 'react';
 import AddTodo from './AddTodo';
 import Todo from './Todo';
 
-const Todolist = ({ todos, addTodo }) => {
+const Todolist = ({ todos, addTodo, deleteTodo }) => {
   return (
     <div className="todolist">
       <AddTodo addTodo={addTodo} />
       <h1 className="main-title">Todo List</h1>
       <div className="overflow">
         {todos.map((todo) => (
-          <Todo key={todo.id} todo={todo} />
+          <Todo key={todo.id} todo={todo} deleteTodo={deleteTodo} />
         ))}
       </div>
     </div>

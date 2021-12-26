@@ -34,6 +34,11 @@ const Main = () => {
     setTodos([{ id, text, date, done }, ...todos]);
   };
 
+  // Delete Todo
+  const deleteTodo = (id) => {
+    setTodos(todos.filter((v) => v.id !== id));
+  };
+
   return (
     <div className="main-page">
       <nav>
@@ -42,7 +47,7 @@ const Main = () => {
 
       <div className="main">
         <SideBar />
-        <Todolist todos={todos} addTodo={addTodo} />
+        <Todolist todos={todos} addTodo={addTodo} deleteTodo={deleteTodo} />
       </div>
     </div>
   );

@@ -6,7 +6,7 @@
 }
 
 .main-nav {
-  height: 2.8rem;
+  height: 3rem;
   background-color: var(--light-black);
 
   display: flex;
@@ -20,7 +20,7 @@
 .main-nav .main-logo {
   text-transform: uppercase;
   font-family: 'JetBrains Mono', sans-serif;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
 
   cursor: pointer;
 }
@@ -39,7 +39,7 @@
 }
 
 .main {
-  height: calc(100vh - 2.8rem);
+  height: calc(100vh - 3rem);
   /* padding: 5rem 0; */
 
   display: grid;
@@ -49,7 +49,7 @@
 
 /* SideBar */
 .sideBar {
-  height: calc(100vh - 2.8rem - 3px);
+  height: calc(100vh - 3rem - 3px);
   background-color: var(--light-black);
 
   padding: 3rem 0rem;
@@ -98,7 +98,22 @@
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
+}
+
+.todolist .todo > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.todolist .todo .delete-btn {
+  color: var(--light-pink);
+  font-size: 1.1rem;
+
+  cursor: pointer;
 }
 
 .todolist .todo .checkButton {
