@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* NavBar */
+.main-nav {
+  height: 55px;
+  padding: 5px 100px;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-logo {
+  width: 45px;
+}
+
+.main-nav button {
+  height: 35px;
+  text-align: center;
+}
+
+.main-nav button:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-search-bar {
+  width: 80%;
+  outline: none;
+  border: steelblue 1px solid;
+  height: 50px;
+  margin-top: 10px;
+  padding: 5px 20px;
+  font-size: 1.1rem;
+}
+
+/* Movies Container */
+.movies-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.movies-container {
+  width: 80%;
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 10px;
+}
+
+.movie-title-image {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.movie-title {
+  display: block;
+  max-width: 240px;
+  font-size: 100%;
+  margin-bottom: 0;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.fa-imdb {
+  font-size: 1.2rem;
+  color: rgb(175, 175, 0);
+  margin-right: 5px;
+}

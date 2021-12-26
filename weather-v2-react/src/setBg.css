@@ -1,0 +1,110 @@
+/* ---------------------------------------------------------- Warm Background ------------------------------------------- */
+
+.App.clouds.warm {
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 48, 30, 0.7),
+      rgba(234, 119, 53, 0.5)
+    ),
+    url(./img/background/cloud-bg.jpg);
+}
+
+.App.snow.warm {
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 48, 30, 0.7),
+      rgba(234, 119, 53, 0.5)
+    ),
+    url(./img/background/snow-bg.jpg);
+}
+
+.App.rain.warm {
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 48, 30, 0.7),
+      rgba(234, 119, 53, 0.5)
+    ),
+    url(./img/background/rain-bg.jpg);
+}
+
+.App.clear.warm {
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 48, 30, 0.7),
+      rgba(234, 119, 53, 0.5)
+    ),
+    url(./img/background/fair-bg.jpg);
+}
+
+.App.fog.warm {
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 48, 30, 0.7),
+      rgba(234, 119, 53, 0.5)
+    ),
+    url(./img/background/fog-bg.jpg);
+}
+
+.App.thunderstorm.warm {
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 48, 30, 0.7),
+      rgba(234, 119, 53, 0.5)
+    ),
+    url(./img/background/thunderstorm-bg.jpg);
+}
+
+/* ---------------------------------------------------------- Cold Background ------------------------------------------- */
+.App.clouds.cold {
+  background-image: linear-gradient(
+      45deg,
+      rgba(34, 85, 100, 0.5),
+      rgba(122, 169, 191, 0.5)
+    ),
+    url(./img/background/cloud-bg.jpg);
+}
+
+.App.snow.cold {
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 48, 30, 0.7),
+      rgba(234, 119, 53, 0.5)
+    ),
+    url(./img/background/snow-bg.jpg);
+}
+
+.App.rain.cold {
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 48, 30, 0.7),
+      rgba(234, 119, 53, 0.5)
+    ),
+    url(./img/background/rain-bg.jpg);
+}
+
+.App.clear.cold {
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 48, 30, 0.7),
+      rgba(234, 119, 53, 0.5)
+    ),
+    url(./img/background/fair-bg.jpg);
+}
+
+.App.fog.cold {
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 48, 30, 0.7),
+      rgba(234, 119, 53, 0.5)
+    ),
+    url(./img/background/fog-bg.jpg);
+}
+
+.App.thunderstorm.cold {
+  background-image: linear-gradient(
+      45deg,
+      rgba(82, 48, 30, 0.7),
+      rgba(234, 119, 53, 0.5)
+    ),
+    url(./img/background/thunderstorm-bg.jpg);
+}

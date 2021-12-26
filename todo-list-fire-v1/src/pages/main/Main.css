@@ -1,0 +1,165 @@
+/* ----------------------------------------- Main Page ---------------------------------------- */
+/* NavBar */
+.main-page {
+  background-color: var(--black);
+  color: whitesmoke;
+}
+
+.main-nav {
+  height: 2.8rem;
+  background-color: var(--light-black);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 2rem;
+  margin-bottom: 3px;
+}
+
+.main-nav .main-logo {
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', sans-serif;
+  letter-spacing: 5px;
+
+  cursor: pointer;
+}
+
+.main-nav .navigator-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.main-nav .navigator-buttons .avatar {
+  font-size: 1.3rem;
+}
+
+.main {
+  height: calc(100vh - 2.8rem);
+  /* padding: 5rem 0; */
+
+  display: grid;
+  grid-template-columns: 1fr 5.5fr;
+  gap: 3rem;
+}
+
+/* SideBar */
+.sideBar {
+  height: calc(100vh - 2.8rem - 3px);
+  background-color: var(--light-black);
+
+  padding: 3rem 0rem;
+}
+
+.sideBar .category {
+  font-size: 1.2rem;
+  color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 0.2rem;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sideBar .category.on {
+  background-color: #272732;
+}
+
+.sideBar .category:hover {
+  background-color: #272732;
+}
+
+/* Todo list */
+.todolist {
+  padding: 1rem 1rem;
+}
+
+.todolist .overflow {
+  height: 60vh;
+
+  overflow-y: auto;
+}
+
+.todolist .main-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.todolist .todo {
+  background-color: var(--light-black);
+  border-radius: 5px;
+  width: 70%;
+  margin-bottom: 0.6rem;
+  padding: 0.7rem 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.todolist .todo .checkButton {
+  font-size: 1.4rem;
+  color: var(--light-pink);
+  cursor: pointer;
+}
+
+.todolist .todo .todo-text {
+  font-size: 1.15rem;
+  margin-bottom: 2px;
+}
+
+.todolist .todo .todo-text.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+/* Form */
+.todolist .add-todo-form {
+  display: grid;
+  grid-template-columns: 0.3fr 6fr 1fr;
+  width: 70%;
+  gap: 1rem;
+
+  margin-bottom: 1.5rem;
+  border: 3px var(--light-black) solid;
+  padding: 0.7rem 1rem;
+  border-radius: 20px;
+}
+
+.todolist .add-todo-form button {
+  font-size: 1.7rem;
+  color: var(--light-pink);
+  background-color: var(--black);
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.todolist .add-todo-form .form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.todolist .add-todo-form .form-control input {
+  margin-top: 5px;
+  padding: 0.5rem 0.7rem;
+
+  color: whitesmoke;
+  font-size: 1.05rem;
+
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: var(--light-black);
+  border-radius: 2px;
+}
+
+.todolist .add-todo-form .form-control:nth-child(3) input {
+  font-size: 0.8rem;
+}
