@@ -12,20 +12,8 @@ import { useState } from 'react';
 import SideBar from './components/SideBar';
 
 const Main = () => {
-  const [todos, setTodos] = useState([
-    {
-      id: 1,
-      text: 'Finish the essay collaboration',
-      date: '18/12/2021',
-      done: false,
-    },
-    {
-      id: 2,
-      text: 'Read the next chapter of the book in Danish',
-      date: '15/12/2021',
-      done: true,
-    },
-  ]);
+  const [todos, setTodos] = useState([]);
+  const [category, setCategory] = useState('today');
 
   // Add Todo
   const addTodo = ({ text, date }) => {
@@ -39,6 +27,16 @@ const Main = () => {
     setTodos(todos.filter((v) => v.id !== id));
   };
 
+  // setShowToday
+  const setShowToday = () => {
+    setCategory('today');
+  };
+
+  // setShowAllTodo
+  const setShowAllTodo = () => {
+    setCategory('all');
+  };
+
   return (
     <div className="main-page">
       <nav>
@@ -46,8 +44,17 @@ const Main = () => {
       </nav>
 
       <div className="main">
-        <SideBar />
-        <Todolist todos={todos} addTodo={addTodo} deleteTodo={deleteTodo} />
+        <SideBar
+          setShowToday={setShowToday}
+          setShowAllTodo={setShowAllTodo}
+          category={category}
+        />
+        <Todolist
+          todos={todos}
+          addTodo={addTodo}
+          deleteTodo={deleteTodo}
+          category={category}
+        />
       </div>
     </div>
   );
